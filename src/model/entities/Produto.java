@@ -1,7 +1,8 @@
 package model.entities;
 
 public class Produto {
-
+	
+	private Integer codigo;
 	private Double valor;
 	private String name;
 	private String descriçao;
@@ -18,7 +19,7 @@ public class Produto {
 
 	@Override
 	public String toString() {
-		return "Produto [valor=" + valor + ", name=" + name + ", descriçao=" + descriçao + "]";
+		return "name=" + name + ", valor=" + valor + ", descriçao=" + descriçao;
 	}
 
 	
