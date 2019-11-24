@@ -10,7 +10,7 @@ public class Produto {
 
 	}
 
-	public Produto(Double valor, String name, String descriçao) {
+	public Produto( String name, Double valor, String descriçao) {
 		this.valor = valor;
 		this.name = name;
 		this.descriçao = descriçao;

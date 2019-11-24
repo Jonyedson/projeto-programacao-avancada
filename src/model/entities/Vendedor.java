@@ -6,7 +6,7 @@ import java.util.List;
 public class Vendedor extends Pessoa {
 
 	private List<Produto> produtos = new ArrayList<>();
-	private List<Venda> vendas = new ArrayList<>();
+	private List<Pedido> pedidos = new ArrayList<>();
 
 	public Vendedor(String nome, String email, int id) {
 		super(nome, email, id);
