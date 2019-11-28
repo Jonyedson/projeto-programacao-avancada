@@ -1,4 +1,4 @@
-package model.entregas;
+package model.entities.entrega;
 
 public class Enviado implements StatusPedido {
 

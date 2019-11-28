@@ -2,7 +2,7 @@ package model.entities;
 
 public class Vendedor extends Pessoa {
 
-	public Vendedor(String nome, String email, int id) {
+	public Vendedor(String nome, String email, Integer id) {
 		super(nome, email, id);
 	}
 

@@ -4,7 +4,11 @@ public class Cliente extends Pessoa {
 
 	
 	
-	public Cliente(String nome, String email, int id) {
+	public Cliente(){
+		
+	}
+	
+	public Cliente(String nome, String email, Integer id) {
 		super(nome, email, id);
 
 	}

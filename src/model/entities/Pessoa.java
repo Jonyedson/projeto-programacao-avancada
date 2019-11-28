@@ -3,9 +3,9 @@ package model.entities;
 public abstract class Pessoa {
 	protected String nome;
 	protected String email;
-	protected int id;
+	protected Integer id;
 
-	public Pessoa(String nome, String email, int id) {
+	public Pessoa(String nome, String email, Integer id) {
 		this.nome = nome;
 		this.email = email;
 		this.id = id;
