@@ -4,7 +4,7 @@ public class Produto {
 
 	private Integer codigo;
 	private Double valor;
-	private String name;
+	private String nome;
 	private String descriçao;
 	private Integer quantidade;
 	private static Integer quantidadeTotal;
@@ -15,10 +15,17 @@ public class Produto {
 
 	public Produto(String name, Double valor, String descriçao, Integer codigo, Integer quantidade) {
 		this.valor = valor;
-		this.name = name;
+		this.nome = name;
 		this.descriçao = descriçao;
 		this.codigo = codigo;
 		this.quantidade = quantidade;
+	}
+	
+	public Produto(String name, Double valor, String descriçao, Integer codigo) {
+		this.valor = valor;
+		this.nome = name;
+		this.descriçao = descriçao;
+		this.codigo = codigo;
 	}
 
 	public Integer getCodigo() {
@@ -37,12 +44,12 @@ public class Produto {
 		this.valor = valor;
 	}
 
-	public String getName() {
-		return name;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setNome(String name) {
+		this.nome = name;
 	}
 
 	public String getDescriçao() {
@@ -55,7 +62,7 @@ public class Produto {
 
 	@Override
 	public String toString() {
-		return "name=" + name + ", valor=" + valor + ", descriçao=" + descriçao + "Codigo=" + codigo;
+		return "name=" + nome + ", valor=" + valor + ", descriçao=" + descriçao + "Codigo=" + codigo;
 	}
 
 	public static Integer getQuantidadeTotal() {

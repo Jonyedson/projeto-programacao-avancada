@@ -29,7 +29,7 @@ public class ProdutoDaoJDBC implements ProdutoDao {
 			st = conn.prepareStatement("INSERT INTO produto (Name, Descricao, Preco, Quantidade) VALUES(?,?,?,?)"
 					, Statement.RETURN_GENERATED_KEYS);
 
-			st.setString(1, obj.getName());
+			st.setString(1, obj.getNome());
 			st.setString(2, obj.getDescriçao());
 			st.setDouble(3, obj.getValor());
 			st.setInt(4, obj.getQuantidade());
@@ -59,7 +59,7 @@ public class ProdutoDaoJDBC implements ProdutoDao {
 			st = conn.prepareStatement(
 					"UPDATE produto SET Name = ? , Descricao = ? , Preco = ? , Quantidade = ? WHERE Id = ?");
 
-			st.setString(1, obj.getName());
+			st.setString(1, obj.getNome());
 			st.setString(2, obj.getDescriçao());
 			st.setDouble(3, obj.getValor());
 			st.setInt(4, obj.getQuantidade());
